@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Personal Website</title>
-  <link href="dist/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-&width, initial-scale=1.0">
+    <title>Heather L Yaple: Full-Stack Developer & Data Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <section id="home" class="hero">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hi, I'm [Your Name]. I'm a [Your Profession].</p>
-        <a href="#portfolio" class="btn-primary">View My Work</a>
-      </section>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home" class="hero">
+            <h1>Heather L Yaple: Full-Stack Developer & Data Enthusiast</h1>
+            <p>Hi, I'm Heather Yaple. I'm a trained full-stack developer and data enthusiast.</p>
+            <a href="#portfolio" class="btn-primary">View My Work</a>
+        </section>
     </header>
-  
+
     <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>[Write a brief introduction about yourself, your background, and what you do.]</p>
-      <img src="path/to/your-photo.jpg" alt="Your Photo">
+        <h2>About Me</h2>
+        <p id="about-description">I am a passionate developer with expertise in building full-stack applications and analyzing data to drive insights. My projects reflect a love for crafting functional and aesthetic solutions.</p>
+        <img src="images/20200920_221434384_iOS.jpg" alt="Heather Yaple">
     </section>
-  
+
     <!-- Portfolio Section -->
     <section id="portfolio">
-      <h2>My Portfolio</h2>
-      <div class="portfolio-item">
-        <img src="path/to/project1-thumbnail.jpg" alt="Project 1">
-        <h3>Project 1</h3>
-        <p>[Description of project 1]</p>
-        <a href="link-to-project1" class="btn-secondary">View Project</a>
-      </div>
-      <div class="portfolio-item">
-        <img src="path/to/project2-thumbnail.jpg" alt="Project 2">
-        <h3>Project 2</h3>
-        <p>[Description of project 2]</p>
-        <a href="link-to-project2" class="btn-secondary">View Project</a>
-      </div>
-      <!-- Add more portfolio items as needed -->
+        <h2>My Portfolio</h2>
+        <div id="portfolio-items">
+            <!-- Portfolio items will be dynamically added here -->
+        </div>
     </section>
-  
+
     <!-- Blog Section -->
     <section id="blog">
-      <h2>Blog</h2>
-      <article>
-        <h3><a href="link-to-blog-post1">Blog Post Title 1</a></h3>
-        <p>[Brief summary of blog post 1]</p>
-        <a href="link-to-blog-post1" class="btn-secondary">Read More</a>
-      </article>
-      <article>
-        <h3><a href="link-to-blog-post2">Blog Post Title 2</a></h3>
-        <p>[Brief summary of blog post 2]</p>
-        <a href="link-to-blog-post2" class="btn-secondary">Read More</a>
-      </article>
-      <!-- Add more blog posts as needed -->
+        <h2>Blog</h2>
+        <article>
+            <h3><a href="https://docs.google.com/document/d/1fZoujdkWQYUfSx15CbG_MFfkb0L3j7hkmNpHQnif-F0/edit#heading=h.ca0awj8022e2">Working Resume</a></h3>
+            <p>Up-to-date resume with detailed professional information.</p>
+            <a href="https://docs.google.com/document/d/1fZoujdkWQYUfSx15CbG_MFfkb0L3j7hkmNpHQnif-F0/edit#heading=h.ca0awj8022e2" class="btn-secondary">Read More</a>
+        </article>
+        <article>
+            <h3><a href="https://docs.google.com/document/d/1n6UFea2tOe_gZJiqDztl4kqn5VDHeMg220DTMLIcztI">Applying to App Academy</a></h3>
+            <p>My experience joining a coding bootcamp with limited programming knowledge.</p>
+            <a href="https://docs.google.com/document/d/1n6UFea2tOe_gZJiqDztl4kqn5VDHeMg220DTMLIcztI" class="btn-secondary">Read More</a>
+        </article>
+        <article>
+            <h3><a href="https://docs.google.com/document/d/1B84Rnn690LzdcCu2aVAJKy1DUCsqYZR0HWGenlb4208">My First Day of Bootcamp</a></h3>
+            <p>Insights into my first day at App Academy.</p>
+            <a href="https://docs.google.com/document/d/1B84Rnn690LzdcCu2aVAJKy1DUCsqYZR0HWGenlb4208" class="btn-secondary">Read More</a>
+        </article>
     </section>
-  
+
     <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="your-form-handler-url" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
     </section>
-  
+
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></li>
-        <li><a href="https://github.com/yourusername">GitHub</a></li>
-        <li><a href="mailto:your.email@example.com">Email</a></li>
-      </ul>
+        <p>&copy; 2024 Heather L Yaple. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/heather-yaple-77a81731b">LinkedIn</a></li>
+            <li><a href="https://github.com/heather-yaple">GitHub</a></li>
+            <li><a href="mailto:heatherlyaple@gmail.com">Email</a></li>
+        </ul>
     </footer>
-  </body>
-  </html>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
